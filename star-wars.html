@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@400;500;600;7000&display=swap"
+    rel="stylesheet"
+  />
+    <title>StarWars API</title>
+    <style>
+        /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+  
+        /*
+        MAIN-COLOR: #087f5b;
+        GREY-COLOR: #343a40;
+        */
+  
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+        font-family: "inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+       
+       
+      }
+
+      .container{
+          width: 1200px;
+      
+          margin: 0 auto;
+          padding: 30px;
+          background-color: #000;
+      }
+
+      header {
+         
+         
+    
+      }
+
+      .main-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        margin-bottom: 48px;
+          
+      }
+      
+      .items{
+          display: flex;
+          align-items: center;
+          margin-bottom: 24px;
+          gap: 20px;
+
+      }
+
+      button{
+          font-size: 16px;
+          text-decoration: none;
+          border:none;
+          color: #fff;
+          background-color: #000;
+          /* display:inline-block; */
+
+      }
+
+      button:first-child{
+          color: yellow;
+      }
+
+      img{
+          width: 300px;
+          height: 200px;
+          border-radius: 12px;
+      }
+
+      .movie-box{
+          width: 300px;
+          border-radius: 12px;
+          box-shadow: 0px 0px 3px 0 rgba(255, 255, 255, 0.836);
+          background-color: #fff;
+            
+      }
+
+      section{
+        display: grid;
+          grid-template-columns: repeat(3, 300px);
+          grid-template-rows: 400px 1fr;
+          gap: 30px;
+          justify-content: center;
+         
+      }
+
+      section img{
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+      }
+
+      p{
+          font-size: 14px;
+          margin-bottom: 12px;
+      }
+
+      p:last-child{
+        
+          margin-bottom: 0;
+      }
+
+      
+
+      h3{
+          font-size: 18px;
+          line-height: 1;
+          margin-bottom: 10px;
+      }
+
+      .movie-description{
+          padding: 22px 16px;  
+         /* background-color: #fff; */
+      }
+
+      .logo{
+          width:136px;
+          height: 126px;
+      }
+
+      .first-word{
+          color: rgb(238, 5, 5);
+          font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="main-header">
+
+                <img class="logo" src="[CITYPNG.COM]HD White Star Wars Logo PNG - 2500x2500.png" alt="star war logo"/>
+                <div class="items">
+                    <button>Home</button>
+                    <button>News+Features</button>
+                    <button>Movies</button>
+                    <button>Series</button>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <div class="movie-box">
+                <img src="images (1).jpeg" alt="The Rise of Skywalker (Epidode IX)"/>
+                <div class="movie-description">
+                    <h3>Star Wars: The Rise of Skywalker (Epidode IX)</h3>
+                    <p><span class="first-word" >Genre: </span>Action-Adventure, Science Fiction</p>
+                    <p><span class="first-word" >Release Date: </span>20th December, 2019</p>
+                    <p><span class="first-word" >Director: </span>J.J Abrams </p>
+            </div>
+        </div>
+        
+        <div class="movie-box">
+            <img src="images (15).jpeg" alt="A Star Wars Stroy"/>
+            <div class="movie-description">
+
+                <h3>Rogue One: A Star Wars Stroy</h3>
+                <p><span class="first-word" >Genre: </span>Action-Adventure, Science Fiction</p>
+                <p><span class="first-word" >Release Date: </span>13th December, 2016</p>
+                <p><span class="first-word" >Director: </span>Gareth Edwards</p>
+            </div>
+        </div>
+        
+        <div class="movie-box">
+            <img src="images.jpeg" alt="A Star Wars Stroy"/>
+            <div class="movie-description">
+
+                <h3>Star Wars: The Force Awakens (Episode VII)</h3>
+                <p><span class="first-word" >Genre: </span>Action-Adventure, Science Fiction</p>
+                <p><span class="first-word" >Release Date: </span>18th December, 2015</p>
+                <p><span class="first-word" >Director: </span>J.J Abrams</p>
+            </div>
+        </div>
+        
+        <div class="movie-box">
+            <img src="images (16).jpeg" alt="A Star Wars Stroy"/>
+            <div class="movie-description">
+
+                <h3>Solo: A Star Wars Stroy</h3>
+                <p><span class="first-word" >Genre: </span>Action-Adventure, Science Fiction</p>
+                <p><span class="first-word" >Release Date: </span>25th May, 2018</p>
+                <p><span class="first-word" >Director: </span>Ron Howard</p>
+            </div>
+        </div>
+        
+        <div class="movie-box">
+            <img src="star_wars__episode_viii___the_last_jedi__2017__hd_by_hotripak_dgun4es-pre.jpg" alt="A Star Wars Stroy"/>
+            <div class="movie-description">
+
+                <h3>Star Wars: The last Jedi </h3>
+                <p><span class="first-word" >Genre: </span>Action-Adventure, Science Fiction</p>
+                <p><span class="first-word" >Release Date: </span>15th December, 2017</p>
+                <p><span class="first-word" >Director: </span>Ryan Johnson</p>
+            </div>
+        </div>
+            
+        <div class="movie-box">
+            <img src="images (17).jpeg" alt="A Star Wars Stroy"/>
+            <div class="movie-description">
+
+                <h3>Star Wars: Return of the Jedi (Episode VI)</h3>
+                <p><span class="first-word" >Genre: </span>Action-Adventure, Science Fiction</p>
+                <p><span class="first-word" >Release Date: </span>25th May, 1983</p>
+                <p><span class="first-word" >Director: </span>Richard Marquand</p>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
